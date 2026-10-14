@@ -36,7 +36,6 @@ print(appended_content)
 
 import csv
 
-filepath = r"C:\Users\314087\Repos\python-playwright\Part_3\employees.csv"
 data = [
     ["ID", "Name", "Salary"],
     ["001", "Mark", "50000"],
