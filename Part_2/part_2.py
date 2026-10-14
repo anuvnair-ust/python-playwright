@@ -6,7 +6,7 @@ def calculate_bill(price,quantity):
     amount = price * quantity
     if amount > 2000:
         amount *= 0.9
-    return  f"The total amount is: {amount}"
+    return  amount
 
 
 print(calculate_bill(500,5))
