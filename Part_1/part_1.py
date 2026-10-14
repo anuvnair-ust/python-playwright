@@ -6,27 +6,26 @@ print(largest)
 
 # OR
 
-def find_largest_number(number_list):
-    max = number_list[0]
-    for i in range(len(number_list)):
-        if number_list[i]>max:
-            max = number_list[i]
-    return max
 
-print(find_largest_number(numbers))
+max = numbers[0]
+for i in range(len(numbers)):
+    if numbers[i]>max:
+        max = numbers[i]
+
+
+print(max)
 
 
 
 
 # 2. Character frequency . Given the string 'programming', count the frequency of every character using a dictionary.
 
-def count_characters(st):
-    freq = {}
-    for ch in st:
-        freq[ch] = freq.get(ch,0) + 1
-    return freq
+st = 'programming'
+freq = {}
+for ch in st:
+    freq[ch] = freq.get(ch,0) + 1
 
-print(count_characters('programming'))
+print(freq)
 
 
 # 3. Student marks analysis · Store three students and their marks in a dictionary. Print each student's result as Pass (marks >= 40) or Fail.
